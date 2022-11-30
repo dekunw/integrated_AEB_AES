@@ -1,5 +1,5 @@
 # integrated_AEB_AES
-This repository is some of the remaining source code of my master thesis at KTH(http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1602269&dswid=-9052) as well as a conference paper (https://ieeexplore.ieee.org/document/9837228). Unfortunately, some of the source codes are lost over the years and long travel during covid pandemic.
+This repository is the source code of a paper "Integrated Control of Steering and Braking for Effective Collision Avoidance with Autonomous Emergency Braking in Automated Driving" published at the 30th Mediterranean Conference on Control and Automation (MED), 2022 (https://ieeexplore.ieee.org/document/9837228).
 
 To use all of these codes and simulink models, make sure you have installed carsim, ROS extension to matlab and prepare a board like Nvidia Jetson Nano.
 
