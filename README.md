@@ -8,3 +8,13 @@ There are four file folders in this repository. Descriptions are down below:
 Files that are named similarly to LFACC_01_DoubleCurve_DecelTarget.mat are DrivingScenarios predefined. Some of them are from vehicle safety testing standards(ISO or European Standards, could not recall). Some are created by myself to test the behavior of the controlled system.
 
 Open "helpLFSetUp.m" to load parameters needed. Then open "Integrated_controlled_system.slx" then it is ready to run. It should be noted that "LateralDynamicsCT05.m" and "LateralDynamicsDT05" is discrete-time(DT) and continuous-time(CT) dynamics model of the vehicle. "Controller.slx" is needed in Integrated_controlled_system.slx" which is the main contribution of mine.
+
+
+## ZOH
+"ZOH" means the model with fixed sample time discretized by Zero-Order-Hold(ZOH). It was built before implementing FOH(First-Order-Hold). There are several files of great interest.
+
+1. "LateralController1.slx" is a model directly adapted from some official example where an Adaptive MPC block is used.
+2. "LateralControllerDIY.slx" replaced the adaptive MPC block with a self-written matlab function as lateral controller. It includes two controllers if you open the file you will see. The top one is ZOH controller while the bottom one is newly-made FOH controller.
+3. "IntegratedMPCcontroller5states.slx" includes ZOH model from "LateralControllerDIY.slx" which is in the bottom and also a ZOH integrated controller in the top. The ZOH integrated controller also controls the longitudinal forces input to the vehicle model which also adds an extra state "longitudinal velocity".
+4. "ZOHcontroller.slx" is controller block with ROS communication blocks prepared for HiL testing.
+
