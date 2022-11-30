@@ -7,4 +7,4 @@ There are four file folders in this repository. Descriptions are down below:
 
 Files that are named similarly to LFACC_01_DoubleCurve_DecelTarget.mat are DrivingScenarios predefined. Some of them are from vehicle safety testing standards(ISO or European Standards, could not recall). Some are created by myself to test the behavior of the controlled system.
 
-Open "helpLFSetUp.m" to load parameters needed. Then open "Integrated_controlled_system.slx" then it is ready to run. It should be noted that
+Open "helpLFSetUp.m" to load parameters needed. Then open "Integrated_controlled_system.slx" then it is ready to run. It should be noted that "LateralDynamicsCT05.m" and "LateralDynamicsDT05" is discrete-time(DT) and continuous-time(CT) dynamics model of the vehicle. "Controller.slx" is needed in Integrated_controlled_system.slx" which is the main contribution of mine.
