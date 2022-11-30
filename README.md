@@ -11,7 +11,7 @@ Open "helpLFSetUp.m" to load parameters needed. Then open "Integrated_controlled
 
 
 ## ZOH
-"ZOH" means the model with fixed sample time discretized by Zero-Order-Hold(ZOH). It was built before implementing FOH(First-Order-Hold). There are several files of great interest.
+"ZOH" means the model with fixed sample time discretized by Zero-Order-Hold(ZOH). It was built before implementing First-Order-Hold(FOH). There are several files of great interest.
 
 1. "LateralController1.slx" is a model directly adapted from some official example where an Adaptive MPC block is used.
 2. "LateralControllerDIY.slx" replaced the adaptive MPC block with a self-written matlab function as lateral controller. It includes two controllers if you open the file you will see. The top one is ZOH controller while the bottom one is newly-made FOH controller.
