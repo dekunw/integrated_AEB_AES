@@ -2,6 +2,10 @@
 This repository is some of the remaining source code of my master thesis at KTH(http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A1602269&dswid=-9052) as well as a conference paper (https://ieeexplore.ieee.org/document/9837228). Unfortunately, some of the source codes are lost over the years and long travel during covid pandemic.
 
 There are four file folders in this repository. Descriptions are down below:
+## FOH and other files
+This is the final version of the integrated AEB+AES(Autonomous Emergency Steering) controller. There are some files related to Stochastic MPC controller but not all of them.
+
+
 ## ModelWithCameraRadar
 "lane_following","4sensors" and "8sensors_MAY15th" are almost the same. The only difference is the sensor settings that the first uses default one-front-camera and one-radar settings, the second also add extra one-rear camera and one-rear-radar, the last includes four groups of one-camera one-radar combination. However, the last one may not be appropriate for its heavy computation burden in ordinary PC.
 
@@ -10,7 +14,7 @@ Files that are named similarly to ["LFACC_01_DoubleCurve_DecelTarget.mat"](https
 Open "helpLFSetUp.m" to load parameters needed. Then open "Integrated_controlled_system.slx" then it is ready to run. It should be noted that "LateralDynamicsCT05.m" and "LateralDynamicsDT05" is discrete-time(DT) and continuous-time(CT) dynamics model of the vehicle. "Controller.slx" is needed in Integrated_controlled_system.slx" which is the main contribution of mine.
 
 
-## ZOH
+## ZOH and some FOH
 "ZOH" means the model with fixed sample time discretized by Zero-Order-Hold(ZOH). It was built before implementing First-Order-Hold(FOH). There are several files of great interest.
 
 1. "LateralController1.slx" is a model directly adapted from some official example where an Adaptive MPC block is used.
