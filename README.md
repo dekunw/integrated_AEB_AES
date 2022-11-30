@@ -5,7 +5,7 @@ There are four file folders in this repository. Descriptions are down below:
 ## ModelWithCameraRadar
 "lane_following","4sensors" and "8sensors_MAY15th" are almost the same. The only difference is the sensor settings that the first uses default one-front-camera and one-radar settings, the second also add extra one-rear camera and one-rear-radar, the last includes four groups of one-camera one-radar combination. However, the last one may not be appropriate for its heavy computation burden in ordinary PC.
 
-Files that are named similarly to [LFACC_01_DoubleCurve_DecelTarget.mat](https://github.com/dekunw/integrated_AEB_AES/blob/main/ModelWithCameraRadar/4sensors/lane_following/LFACC_01_DoubleCurve_DecelTarget.mat) are DrivingScenarios predefined. Some of them are from vehicle safety testing standards(ISO or European Standards, could not recall). Some are created by myself to test the behavior of the controlled system.
+Files that are named similarly to ["LFACC_01_DoubleCurve_DecelTarget.mat"](https://github.com/dekunw/integrated_AEB_AES/blob/main/ModelWithCameraRadar/4sensors/lane_following/LFACC_01_DoubleCurve_DecelTarget.mat) are DrivingScenarios predefined. Some of them are from vehicle safety testing standards(ISO or European Standards, could not recall). Some are created by myself to test the behavior of the controlled system.
 
 Open "helpLFSetUp.m" to load parameters needed. Then open "Integrated_controlled_system.slx" then it is ready to run. It should be noted that "LateralDynamicsCT05.m" and "LateralDynamicsDT05" is discrete-time(DT) and continuous-time(CT) dynamics model of the vehicle. "Controller.slx" is needed in Integrated_controlled_system.slx" which is the main contribution of mine.
 
