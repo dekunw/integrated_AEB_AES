@@ -18,3 +18,7 @@ Open "helpLFSetUp.m" to load parameters needed. Then open "Integrated_controlled
 3. "IntegratedMPCcontroller5states.slx" includes ZOH model from "LateralControllerDIY.slx" which is in the bottom and also a ZOH integrated controller in the top. The ZOH integrated controller also controls the longitudinal forces input to the vehicle model which also adds an extra state "longitudinal velocity".
 4. "ZOHcontroller.slx" is controller block with ROS communication blocks prepared for HiL testing.
 
+## controller_for_carsim
+The plant model we used before is from matlab source or made by myself(quite simple model, the same model I used for designing the MPC controller). In real cases, the model on which the controller is designed is far simpler than the dynamics of real plants which cannot predict behaviors of real controlled system in many cases. Therefore, to test the performance of the designed controller, we need experiments carried out on real plants or simulations on more sophisticated plant model. In this regard, carsim is introduced and a more complicated vehicle model is used to test the designed controller.
+1.withROS: it includes ROS blocks prepared for HiL testing.
+2.withoutROS: it does not include ROS blocks and can be considered as a version of controlled system with vehicle model in matlab replaced by carsim model.
