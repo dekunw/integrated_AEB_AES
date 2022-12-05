@@ -40,5 +40,5 @@ There are a lot of other models coming from carsim and not created by myself. Be
 
 ## Publication
 
-[Integrated Control of Steering and Braking for Effective Collision Avoidance with Autonomous Emergency Braking in Automated Driving](https://ieeexplore.ieee.org/document/9837228), 30th Mediterranean Conference on Control and Automation (MED), 2022, Greece 
-Dekun Wang, Kaveh Nazem Tahmasebi, and DeJiu Chen
+[Integrated Control of Steering and Braking for Effective Collision Avoidance with Autonomous Emergency Braking in Automated Driving](https://ieeexplore.ieee.org/document/9837228), **Dekun Wang, Kaveh Nazem Tahmasebi, and DeJiu Chen**, 30th Mediterranean Conference on Control and Automation (MED), 2022, Greece 
+
