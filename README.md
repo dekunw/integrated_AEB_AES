@@ -38,5 +38,6 @@ This is the final version of the integrated AEB+AES(Autonomous Emergency Steerin
 There are a lot of other models coming from carsim and not created by myself. Be careful to make changes to them.
 
 
-
 ## Publication
+
+[Integrated Control of Steering and Braking for Effective Collision Avoidance with Autonomous Emergency Braking in Automated Driving](https://ieeexplore.ieee.org/document/9837228)
