@@ -36,3 +36,5 @@ This is the final version of the integrated AEB+AES(Autonomous Emergency Steerin
 5."ROScontroller" is similar to "DIYcontroller". But its controller has two seperated parts, one lateral MPC controller, one longitudinal P controller.
 
 There are a lot of other models coming from carsim and not created by myself. Be careful to make changes to them.
+
+##Publication
